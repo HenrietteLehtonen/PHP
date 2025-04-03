@@ -1,10 +1,6 @@
 <?php
 // sessio startattava aina
 session_start();
-$_SESSION['username'] = 'henski';
-$_SESSION['color'] = 'red';
-
-
 require_once __DIR__ . '/inc/header.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'):
@@ -17,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'):
     header('Location: ' . $_SERVER['PHP_SELF']);
 endif;
 ?>
-
 
 
 <h1>Tehtävä 3</h1>
