@@ -1,0 +1,103 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Media Items osio */
+#media-items {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#media-items h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #0078D7;
+}
+
+#media-items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#media-items table th,
+#media-items table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#media-items table th {
+    background-color: #0078D7;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#media-items table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#media-items table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Insert Media Item osio */
+#insert-media-item {
+    background: #ffffff; /* Vihertävä tausta */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#insert-media-item h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #28a745;
+}
+
+#insert-media-item .form-control {
+    margin-bottom: 15px;
+}
+
+#insert-media-item label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#insert-media-item input[type="text"],
+#insert-media-item input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#insert-media-item input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#insert-media-item input[type="submit"]:hover {
+    background-color: #218838;
+}

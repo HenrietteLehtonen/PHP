@@ -1,0 +1,1 @@
+dbConnect.php - SQLSTATE[HY000] [1045] Access denied for user 'henriel'@'10.116.96.37' (using password: YES)selectData.php - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'MediaItems._user_id' in 'on clause'
