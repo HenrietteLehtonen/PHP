@@ -47,6 +47,10 @@ body {
     font-size: 14px;
 }
 
+#media-items table td img {
+    max-height: 100px;
+}
+
 #media-items table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
@@ -57,7 +61,7 @@ body {
 
 /* Insert Media Item osio */
 #insert-media-item {
-    background: #ffffff; /* Vihertävä tausta */
+    background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -100,4 +104,57 @@ body {
 
 #insert-media-item input[type="submit"]:hover {
     background-color: #218838;
+}
+.btn{
+    margin: 10px;
+}
+.btn-danger {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* Tekstin väri */
+    background-color: #dc3545; /* Vaarallinen väri (punainen) */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(220, 53, 69, 0.4); /* Varjo */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Tummempi punainen hoverissa */
+    box-shadow: 0 6px 10px rgba(220, 53, 69, 0.6); /* Syvempi varjo hoverissa */
+
+}
+
+.btn-danger:active {
+    background-color: #bd2130; /* Vielä tummempi klikattaessa */
+    box-shadow: 0 2px 4px rgba(220, 53, 69, 0.2); /* Matala varjo */
+
+}
+
+/* Varoituspainike - btn-warning */
+.btn-edit {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #212529; /* Tummanharmaa teksti */
+    background-color: #ffc107; /* Varoituksen väri (keltainen) */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(255, 193, 7, 0.4); /* Keltainen varjo */
+}
+
+.btn-edit:hover {
+    background-color: #e0a800; /* Tummempi keltainen hoverissa */
+    box-shadow: 0 6px 10px rgba(255, 193, 7, 0.6); /* Syvempi varjo hoverissa */
+
+}
+
+.btn-edit:active {
+    background-color: #d39e00; /* Vielä tummempi klikattaessa */
+    box-shadow: 0 2px 4px rgba(255, 193, 7, 0.2); /* Matala varjo */
+
 }

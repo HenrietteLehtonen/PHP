@@ -1,0 +1,1 @@
+deleteData.php - database delete - SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`henriele`.`Comments`, CONSTRAINT `Comments_ibfk_1` FOREIGN KEY (`media_id`) REFERENCES `MediaItems` (`media_id`))

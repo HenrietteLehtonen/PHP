@@ -1,4 +1,5 @@
 <section id="media-items">
+    <h2>Media items</h2>
     <table>
         <thead>
         <tr>
@@ -7,12 +8,14 @@
             <th>Created</th>
             <th>Owner</th>
             <th>Thumb</th>
+            <th>Operations</th>
         </tr>
         </thead>
         <tbody>
-        <?php
-            require_once __DIR__ . '/../operations/selectData.php';
-        ?>
+            <?php
+                // <tr> luonti selectDatassa, tuodaan tässä
+                require_once __DIR__ . '/../operations/selectData.php';
+            ?>
 <!--        <tr>-->
 <!--            <td>Nimi</td>-->
 <!--            <td>Diipa daapa</td>-->
