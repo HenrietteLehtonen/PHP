@@ -1,11 +1,12 @@
 <?php
+session_start();
 global $DBH;
 global $SITE_URL;
 require_once __DIR__ . '/../tietokanta/dbConnect.php';
 require_once __DIR__ . '/../config/config.php';
 
 // tsekataan ettei title oo tyhjä ja filussa ei erroreita( käytä formeissa !empty issetin sijasta)
-if (!empty($_POST['title']) && !empty($_POST['user_id']) && $_FILES['file']['error'] === UPLOAD_ERR_OK) {
+if (!empty($_POST['title']) && $_FILES['file']['error'] === UPLOAD_ERR_OK) {
 
     // assos. taulu
     $filename = $_FILES['file']['name'];
@@ -16,7 +17,7 @@ if (!empty($_POST['title']) && !empty($_POST['user_id']) && $_FILES['file']['err
 
     $title = $_POST['title'];
     $description = $_POST['description'];
-    $user_id = $_POST['user_id'];
+    $user_id = $_SESSION['user']['user_id'];
 
     // hyväksy vain kuvat ja videot
     $allowed_types = array('image/jpeg', 'image/png', 'image/webp', 'image/gif',

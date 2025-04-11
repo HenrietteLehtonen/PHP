@@ -15,7 +15,6 @@
             <label for="file">Upload Image</label>
             <input type="file" name="file" id="file" />
         </div>
-        <input type="hidden" name="user_id" value="1" />
         <input type="submit" value="Upload Image" name="submit" />
     </form>
 

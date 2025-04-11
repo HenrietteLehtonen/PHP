@@ -20,8 +20,15 @@ try {
             <td><img src=<?php echo $SITE_URL; ?>/uploads/<?php echo $row['filename']; ?>
                      alt="<?php echo $row['title']; ?>"></td>
             <td>
+                <?php
+                // jos median omistaja näytä delete
+                if ($_SESSION['user']['user_id'] == $row['user_id']
+                    // tai jos aadmin
+                    || $_SESSION['user']['user_level_id'] == '1'):
+                ?>
                 <button data-media_id="<?php echo $row['media_id']; ?>" class="btn btn-edit">Edit</button>
                 <a href="<?php echo $SITE_URL; ?>/operations/deleteData.php?media_id=<?php echo $row['media_id']; ?>" class="btn btn-danger">Delete</a>
+                <?php endif; ?>
             </td>
         </tr>
     <?php

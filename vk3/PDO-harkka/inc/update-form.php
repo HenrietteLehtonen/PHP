@@ -11,7 +11,6 @@
             <label for="description">Description:</label>
             <textarea name="description" id="description" rows="2"></textarea>
         </div>
-        <input type="hidden" name="user_id" value="1"> <!-- muista muttaa value -->
         <input type="hidden" name="media_id" value="<?php echo $_GET['media_id']; ?>">
         <button type="submit">Update file</button>
     </form>
