@@ -1,4 +1,7 @@
 <?php
+if(session_status() != PHP_SESSION_ACTIVE) {
+    session_start();
+}
 global $DBH;
 global $SITE_URL;
 require_once __DIR__ . '/../tietokanta/dbConnect.php';
@@ -6,6 +9,10 @@ require_once __DIR__ . '/../config/config.php';
 
 $sql = "SELECT MediaItems.*, Users.username FROM MediaItems JOIN Users ON Users.user_id = MediaItems.user_id";
 //
+if (!isset($_SESSION['user'])) {
+    header('Location: ' . $SITE_URL . '/user.php');
+    exit;
+}
 
 try {
     $STH = $DBH->query($sql);

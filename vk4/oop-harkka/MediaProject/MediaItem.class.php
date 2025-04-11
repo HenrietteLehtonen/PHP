@@ -13,6 +13,7 @@ class MediaItem
     private int $filesize;
     private string $media_type;
     private string $created_at;
+    private string $username;
 
     // konstruktori - laitetaan data taulukkona
     public function __construct(array $data){
@@ -24,6 +25,7 @@ class MediaItem
         $this->filesize = $data['filesize'];
         $this->media_type = $data['media_type'];
         $this->created_at = $data['created_at'];
+        $this->username = $data['username'];
     }
 
     // getteri media itemille
@@ -38,6 +40,7 @@ class MediaItem
             'filesize' => $this->filesize,
             'media_type' => $this->media_type,
             'created_at' => $this->created_at,
+            'username' => $this->username,
         ];
     }
 }

@@ -1,2 +1,2 @@
 <?php
-$SITE_URL = "http://localhost/php/vk3/PDO-harkka";
+$SITE_URL = "http://localhost/php/vk4/oop-harkka";
